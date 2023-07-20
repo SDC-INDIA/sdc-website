@@ -1,4 +1,4 @@
-import { about } from "@/constants/About";
+import about from "@/constants/About";
 import AboutCard from "./AboutCard";
 
 const About = () => {
@@ -17,7 +17,7 @@ const About = () => {
             <div className="">
                 {
                     about.map((content, index)=>{
-                        return <AboutCard key={index} image={content.image} title={content.title} content={content.content} />
+                        return <AboutCard key={index} data={content} />
                     })
                 }
             </div>

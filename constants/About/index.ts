@@ -1,4 +1,4 @@
-export const about = [
+const about = [
     {
         title: "Mission",
         image: "/static/mission.png",
@@ -15,3 +15,5 @@ export const about = [
         content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam delectus odit me.",
     },
 ];
+
+export default about;

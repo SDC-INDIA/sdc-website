@@ -1,13 +1,8 @@
 import Image from "next/image"
 import { motion } from 'framer-motion';
-// Icons
 import HeroIcons from "./HeroIcons";
-import AutoStoriesIcon from '@mui/icons-material/AutoStories';
-import CardMembershipIcon from '@mui/icons-material/CardMembership';
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
-import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
-import HandshakeIcon from '@mui/icons-material/Handshake';
+import heroData from "@/constants/Hero";
+
 
 const Hero = () => {
   return (
@@ -26,42 +21,11 @@ const Hero = () => {
         </motion.div>
       </div>
       <div className="flex justify-between gap-x-5 flex-wrap">
-        <HeroIcons
-          href="#about"
-          Icon={CardMembershipIcon}
-          color="orange"
-          text="Our Chapters"
-        />
-        <HeroIcons
-          href="#about"
-          Icon={AutoStoriesIcon}
-          color="indigo"
-          text="Blog"
-        />
-        <HeroIcons
-          href="#about"
-          Icon={CalendarMonthIcon}
-          color="cyan"
-          text="Events"
-        />
-        <HeroIcons
-          href="#about"
-          Icon={LocalGroceryStoreIcon}
-          color="pink"
-          text="Store"
-        />
-        <HeroIcons
-          href="#about"
-          Icon={HandshakeIcon}
-          color="red"
-          text="Careers"
-        />
-        <HeroIcons
-          href="#about"
-          Icon={ArrowDownwardIcon}
-          color="purple"
-          text="Get Started"
-        />
+        {
+          heroData.map((data, index)=>{
+            return <HeroIcons key={index} data={data} />
+          })
+        }
       </div>
     </div>
   )

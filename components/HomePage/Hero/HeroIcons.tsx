@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 const HeroIcons = (props: any) => {
-    const { color, text, Icon, href } = props;
+    const { color, text, Icon, href } = props.data;
     const colorClass = `bg-gradient-to-r bg-gradient-to-r from-${color}-500 to-${color}-700`
     return (
         <motion.div className={`w-fit mb-8 cursor-pointer ${colorClass} hover:text-transparent bg-clip-text`} whileHover={{ translateY: -8 }}>
