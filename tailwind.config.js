@@ -13,7 +13,7 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       fontFamily: {
-        'fira': ['Fira Sans', 'ui-sans-serif', 'system-ui', 'sans-serif']
+        'rubik': ['Rubik', 'ui-sans-serif', 'system-ui', 'sans-serif']
       }
     },
   },

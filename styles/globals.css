@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,6 +7,13 @@
 
 @layer base {
     html {
-        @apply font-fira;
+        @apply font-rubik;
+        scroll-behavior: smooth !important;
+    }
+    body {
+        @apply lg:w-[80%] w-[90%] mx-auto;
+    }
+    .custom-color-text {
+        @apply bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text;
     }
 }

@@ -11,11 +11,11 @@ import HandshakeIcon from '@mui/icons-material/Handshake';
 
 const Hero = () => {
   return (
-    <div className="lg:w-[80%] w-[90%] mx-auto">
+    <div>
       <div className=" flex md:flex-row flex-col justify-between  mt-12">
         <div className="flex flex-col justify-center">
-          <h1 className="text-[40px] lg:text-[50px] font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">Welcome to Student Developers Community!</h1>
-          <h2 className="text-xl font-semibold text-left bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">Come fall in a loop of tech</h2>
+          <h1 className="text-[40px] lg:text-[50px] font-bold custom-color-text">Welcome to Student Developers Community!</h1>
+          <h2 className="text-xl font-semibold text-left custom-color-text">Come fall in a loop of tech</h2>
         </div>
         <motion.div
           className=""
@@ -25,7 +25,7 @@ const Hero = () => {
           <Image src="/static/hero_image.png" alt="" height={500} width={500} />
         </motion.div>
       </div>
-      <div className="flex justify-between gap-x-3.5 flex-wrap">
+      <div className="flex justify-between gap-x-5 flex-wrap">
         <HeroIcons
           href="#about"
           Icon={CardMembershipIcon}
