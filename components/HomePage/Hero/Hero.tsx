@@ -1,5 +1,4 @@
 import Image from "next/image"
-import Link from "next/link"
 import { motion } from 'framer-motion';
 // Icons
 import HeroIcons from "./HeroIcons";
@@ -21,44 +20,44 @@ const Hero = () => {
         <motion.div
           className=""
           transition={{ repeat: Infinity, duration: 3 }}
-          animate={{ y: [0,-15,0] }}
+          animate={{ y: [0, -15, 0] }}
         >
           <Image src="/static/hero_image.png" alt="" height={500} width={500} />
         </motion.div>
       </div>
       <div className="flex justify-between gap-x-3.5 flex-wrap">
         <HeroIcons
-          href="/about"
+          href="#about"
           Icon={CardMembershipIcon}
           color="orange"
           text="Our Chapters"
         />
         <HeroIcons
-          href="/about"
+          href="#about"
           Icon={AutoStoriesIcon}
           color="indigo"
           text="Blog"
         />
         <HeroIcons
-          href="/about"
+          href="#about"
           Icon={CalendarMonthIcon}
           color="cyan"
           text="Events"
         />
         <HeroIcons
-          href="/about"
+          href="#about"
           Icon={LocalGroceryStoreIcon}
           color="pink"
           text="Store"
         />
         <HeroIcons
-          href="/about"
+          href="#about"
           Icon={HandshakeIcon}
           color="red"
           text="Careers"
         />
         <HeroIcons
-          href="/about"
+          href="#about"
           Icon={ArrowDownwardIcon}
           color="purple"
           text="Get Started"
