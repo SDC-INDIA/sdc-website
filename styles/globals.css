@@ -7,7 +7,7 @@
 
 @layer base {
     html {
-        @apply font-rubik;
+        @apply font-rubik overflow-x-hidden;
         scroll-behavior: smooth !important;
     }
     .custom-color-text {
