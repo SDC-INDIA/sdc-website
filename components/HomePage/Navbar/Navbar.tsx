@@ -10,7 +10,7 @@ const Navbar = () => {
         setToggle(!toggle);
     }
     return (
-        <nav className="flex items-center justify-between py-4">
+        <nav className="flex items-center justify-between py-4 lg:w-[80%] w-[90%] mx-auto">
             <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
                 <div className="logo">
                     <h1 className="text-3xl font-bold">SDC</h1>
