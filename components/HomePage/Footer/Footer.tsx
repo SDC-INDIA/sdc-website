@@ -1,15 +1,17 @@
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import SocialMedia from './SocialMedia';
+import Link from 'next/link';
+import Image from 'next/image';
 
 const Footer = () => {
     return (
-        <div className="mt-16 bg-gradient-to-r from-[#434343] to-black text-white text-center md:text-left">
+        <div className="mt-16 bg-gradient-to-r from-[black] to-[#434343] text-white text-center md:text-left">
             <div className="lg:w-[80%] w-[90%] mx-auto py-16 flex justify-between flex-col md:flex-row gap-4">
                 <div>
-                    <h1 className="text-[2.5rem] font-semibold">SDC</h1>
-                    <h2 className="py-4">Envisioning a Bharat where everyone and anyone can ignite a transformation</h2>
-                    <p className="py-1">CARBON NEGATIVE SINCE 2021</p>
+                    <Link href="/"><Image className='mx-auto' src="/static/sdc-logo-black.png" height={400} width={400} alt="" /></Link>
+                    {/* <h2 className="py-4">Envisioning a Bharat where everyone and anyone can ignite a transformation</h2>
+                    <p className="py-1">CARBON NEGATIVE SINCE 2021</p> */}
                 </div>
                 <div>
                     <h1 className="custom-color-text text-[1.1rem] font-semibold">Our Products</h1>

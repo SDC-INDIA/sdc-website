@@ -10,7 +10,7 @@ const Hero = () => {
       <div className=" flex md:flex-row flex-col justify-between mt-12">
         <div className="flex flex-col justify-center">
           <h1 className="text-[40px] lg:text-[50px] font-bold custom-color-text">Welcome to Student Developers Community!</h1>
-          <h2 className="text-xl font-semibold text-left custom-color-text">Come fall in a loop of tech</h2>
+          <h2 className="text-xl font-semibold text-left custom-color-text">Fall in the loop of tech</h2>
         </div>
         <motion.div
           className=""
