@@ -10,7 +10,8 @@
         @apply font-rubik overflow-x-hidden;
         scroll-behavior: smooth !important;
     }
-    a:active {
+    a:active, a:focus {
+        outline: none;
         background-color: transparent !important;
     }
     .custom-color-text {
