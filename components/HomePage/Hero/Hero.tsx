@@ -20,7 +20,7 @@ const Hero = () => {
           <Image src="/static/hero_image.png" alt="" height={500} width={500} />
         </motion.div>
       </div>
-      <div className="flex justify-between gap-x-5 flex-wrap">
+      <div className="flex lg:justify-between justify-around gap-x-5 flex-wrap">
         {
           heroData.map((data, index)=>{
             return <HeroIcons key={index} data={data} />
