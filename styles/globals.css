@@ -10,6 +10,9 @@
         @apply font-rubik overflow-x-hidden;
         scroll-behavior: smooth !important;
     }
+    a:active {
+        @apply bg-transparent;
+    }
     .custom-color-text {
         @apply bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text;
     }
