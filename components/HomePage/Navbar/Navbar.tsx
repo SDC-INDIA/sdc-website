@@ -25,7 +25,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="flex items-center gap-6">
-                    <button className="bg-orange-400 hover:bg-orange-300 px-5 py-2 text-white rounded-full">Log in</button>
+                    <button className="bg-orange-400 lg:hover:bg-orange-300 px-5 py-2 text-white rounded-full">Log in</button>
                     {
                         toggle ?
                             <MenuIcon onClick={handleToggle} className="text-3xl cursor-pointer lg:hidden" />
