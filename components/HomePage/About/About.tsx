@@ -3,8 +3,8 @@ import AboutCard from "./AboutCard";
 
 const About = () => {
     return (
-        <div className="lg:flex lg:justify-center lg:wrap lg:gap-40">
-            <div className="lg:w-[70%] lg:mb-0 mb-8" id="about">
+        <div className="lg:flex lg:justify-center lg:wrap lg:gap-40 pt-16" id="about">
+            <div className="lg:w-[70%] lg:mb-0 mb-8">
                 <h1 className="text-[3rem] custom-color-text font-extrabold mb-8">A brief about us</h1>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sapiente, dolore cumque officiis non odit reprehenderit impedit porro ad, iure corrupti veniam hic voluptatum praesentium? Quis atque dolorum ea dolorem?

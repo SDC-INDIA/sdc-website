@@ -11,7 +11,7 @@ const heroData = [
     {
         href: "#about",
         Icon: CardMembershipIcon,
-        color: "Orange",
+        color: "orange",
         text: "Our chapters"
     },
     {
