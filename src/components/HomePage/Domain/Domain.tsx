@@ -1,4 +1,4 @@
-import domainData from "@/constants/Domain";
+import domainData from "@/src/constants/Domain";
 import Link from "next/link"
 import { useState } from "react"
 import Card from "./Card";
