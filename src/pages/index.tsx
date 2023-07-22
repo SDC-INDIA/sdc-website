@@ -1,6 +1,6 @@
-import About from "@/components/HomePage/About/About"
-import Domain from "@/components/HomePage/Domain/Domain"
-import Hero from "@/components/HomePage/Hero/Hero"
+import About from "@/src/components/HomePage/About/About"
+import Domain from "@/src/components/HomePage/Domain/Domain"
+import Hero from "@/src/components/HomePage/Hero/Hero"
 
 export default function Home() {
   return (

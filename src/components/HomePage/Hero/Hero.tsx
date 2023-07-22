@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { motion } from 'framer-motion';
 import HeroIcons from "./HeroIcons";
-import heroData from "@/constants/Hero";
+import heroData from "@/src/constants/Hero";
 
 
 const Hero = () => {
