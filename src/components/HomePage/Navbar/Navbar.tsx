@@ -27,20 +27,22 @@ const Navbar = () => {
                 </div>
                 <div className="flex items-center gap-6">
                     <button className="bg-orange-400 lg:hover:bg-orange-300 px-5 py-2 text-white rounded-full">Log in</button>
-                    {
-                        toggle ?
-                            <MenuIcon onClick={handleToggle} className="text-3xl cursor-pointer lg:hidden" />
-                            :
-                            <CloseIcon onClick={handleToggle} className="text-3xl cursor-pointer lg:hidden" />
-                    }
-                    <div className={`${toggle ? "hidden" : "flex"} bg-white bg-gradient-to-r from-orange-400 via-orange-300 to-red-400 lg:hidden p-6 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
-                        <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
-                            <li className="font-semibold text-white"><Link className="hover:text-gray-500" href="">Our chapters</Link></li>
-                            <li className="font-semibold text-white"><Link className="hover:text-gray-500" href="/blog">Blog</Link></li>
-                            <li className="font-semibold text-white"><Link className="hover:text-gray-500" href="">Events</Link></li>
-                            <li className="font-semibold text-white"><Link className="hover:text-gray-500" href="">Store</Link></li>
-                            <li className="font-semibold text-white"><Link className="hover:text-gray-500" href="">Careers</Link></li>
-                        </ul>
+                    <div className="lg:hidden">
+                        {
+                            toggle ?
+                                <MenuIcon onClick={handleToggle} className="text-3xl cursor-pointer" />
+                                :
+                                <CloseIcon onClick={handleToggle} className="text-3xl cursor-pointer" />
+                        }
+                        <div className={`${toggle ? "hidden" : "flex"} bg-white bg-gradient-to-r from-orange-400 via-orange-300 to-red-400 p-6 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
+                            <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
+                                <li className="font-semibold text-white"><Link className="hover:text-gray-500" href="">Our chapters</Link></li>
+                                <li className="font-semibold text-white"><Link className="hover:text-gray-500" href="/blog">Blog</Link></li>
+                                <li className="font-semibold text-white"><Link className="hover:text-gray-500" href="">Events</Link></li>
+                                <li className="font-semibold text-white"><Link className="hover:text-gray-500" href="">Store</Link></li>
+                                <li className="font-semibold text-white"><Link className="hover:text-gray-500" href="">Careers</Link></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
