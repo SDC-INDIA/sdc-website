@@ -18,11 +18,10 @@ const Navbar = () => {
                 </div>
                 <div className={`md:w-auto hidden lg:flex items-center justify-center px-5`}>
                     <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
-                        <li className="text-xl font-semibold"><Link className="hover:text-gray-500" href="">Our chapters</Link></li>
+                        <li className="text-xl font-semibold"><Link className="hover:text-gray-500" href="/chapters">Our chapters</Link></li>
                         <li className="text-xl font-semibold"><Link className="hover:text-gray-500" href="/blog">Blog</Link></li>
                         <li className="text-xl font-semibold"><Link className="hover:text-gray-500" href="">Events</Link></li>
                         <li className="text-xl font-semibold"><Link className="hover:text-gray-500" href="">Store</Link></li>
-                        <li className="text-xl font-semibold"><Link className="hover:text-gray-500" href="">Careers</Link></li>
                     </ul>
                 </div>
                 <div className="flex items-center gap-6">
@@ -36,11 +35,10 @@ const Navbar = () => {
                         }
                         <div className={`${toggle ? "hidden" : "flex"} bg-white bg-gradient-to-r from-orange-400 via-orange-300 to-red-400 p-6 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
                             <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
-                                <li className="font-semibold text-white"><Link className="hover:text-gray-500" href="">Our chapters</Link></li>
+                                <li className="font-semibold text-white"><Link className="hover:text-gray-500" href="/chapters">Our chapters</Link></li>
                                 <li className="font-semibold text-white"><Link className="hover:text-gray-500" href="/blog">Blog</Link></li>
                                 <li className="font-semibold text-white"><Link className="hover:text-gray-500" href="">Events</Link></li>
                                 <li className="font-semibold text-white"><Link className="hover:text-gray-500" href="">Store</Link></li>
-                                <li className="font-semibold text-white"><Link className="hover:text-gray-500" href="">Careers</Link></li>
                             </ul>
                         </div>
                     </div>
