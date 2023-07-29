@@ -16,4 +16,13 @@
     .get-center {
         @apply w-fit mx-auto;
     }
+    input {
+        @apply bg-slate-100 p-2 rounded-lg w-full shadow-2xl;
+    }
+    input:focus {
+        @apply outline-none;
+    }
+    .login-form > * {
+        @apply my-1;
+    }
 }

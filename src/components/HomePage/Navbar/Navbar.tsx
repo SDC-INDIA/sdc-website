@@ -3,9 +3,12 @@ import Link from "next/link";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(true);
+
+    const router = useRouter();
 
     const handleToggle = () => {
         setToggle(!toggle);
@@ -25,7 +28,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="flex items-center gap-6">
-                    <button className="bg-orange-400 lg:hover:bg-orange-300 px-5 py-2 text-white rounded-full">Log in</button>
+                    <button onClick={()=>router.push('/login')} className="bg-orange-400 lg:hover:bg-orange-300 px-5 py-2 text-white rounded-full">Log in</button>
                     <div className="lg:hidden">
                         {
                             toggle ?
