@@ -4,9 +4,21 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import Image from "next/image";
 import { useRouter } from "next/router";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth, logout } from "@/src/firebase/Auth/auth";
+
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(true);
+
+    const [ user, loading ] = useAuthState(auth);
+    if(user){
+        console.log("user", user);
+        
+    }
+    if(loading) console.log("loading");
+    
+    
 
     const router = useRouter();
 
@@ -28,7 +40,12 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="flex items-center gap-6">
-                    <button onClick={()=>router.push('/login')} className="bg-orange-400 lg:hover:bg-orange-300 px-5 py-2 text-white rounded-full">Log in</button>
+                    {
+                       (user) ?
+                       <button onClick={logout} className="bg-orange-400 lg:hover:bg-orange-300 px-5 py-2 text-white rounded-full">Log Out</button>
+                       :
+                       <button onClick={()=>router.push('/login')} className="bg-orange-400 lg:hover:bg-orange-300 px-5 py-2 text-white rounded-full">Log in</button>
+                    }
                     <div className="lg:hidden">
                         {
                             toggle ?
