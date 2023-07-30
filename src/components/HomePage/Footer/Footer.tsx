@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const Footer = () => {
     return (
-        <div className="mt-16 bg-gradient-to-r from-[black] to-[#434343] text-white text-center md:text-left">
+        <div className="mt-16 bg-black text-white text-center md:text-left">
             <div className="lg:w-[80%] w-[90%] mx-auto py-16 flex justify-between flex-col md:flex-row gap-4">
                 <div>
                     <Link href="/"><Image className='mx-auto' src="/static/sdc-logo-black.png" height={400} width={400} alt="" /></Link>
