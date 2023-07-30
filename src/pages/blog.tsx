@@ -1,8 +1,11 @@
+import Blogs from "../components/BlogsPage/Blogs"
 
 
 const blog = () => {
   return (
-    <div>blog</div>
+    <div className="">
+      <Blogs />
+    </div>
   )
 }
 
