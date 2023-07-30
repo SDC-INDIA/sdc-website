@@ -10,7 +10,7 @@ const HeroIcons = (props: any) => {
         <motion.div className={cls(styles[color], "w-fit mb-8 cursor-pointer hover:text-transparent bg-clip-text")} whileHover={{ translateY: -8 }}>
             <Link href={href}>
                 <div className={cls(styles[color], "shadow-2xl w-[100px] h-[100px] rounded-3xl text-white flex justify-center items-center")}>
-                    <Icon className='text-[40px]' />
+                    <Icon style={{ 'fontSize': '40px' }} />
                 </div>
                 <h1 className='mx-auto w-fit font-bold mt-2 text-[16px]'>{text}</h1>
             </Link>

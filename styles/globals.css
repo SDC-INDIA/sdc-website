@@ -13,4 +13,16 @@
     .custom-color-text {
         @apply bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text;
     }
+    .get-center {
+        @apply w-fit mx-auto;
+    }
+    input {
+        @apply bg-slate-100 p-2 rounded-lg w-full shadow-2xl;
+    }
+    input:focus {
+        @apply outline-none;
+    }
+    .login-form > * {
+        @apply my-1;
+    }
 }
