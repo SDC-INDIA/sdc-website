@@ -1,11 +1,15 @@
 import blogData from "@/src/constants/Blogs"
 import BlogCard from "./BlogCard"
+import Link from "next/link"
 
 
 const Blogs = () => {
     return (
         <div>
             <h1 className="custom-color-text get-center my-4 text-[3rem] font-semibold">Blogs from us!</h1>
+            <div className="flex justify-center">
+                <Link href="/blog/add_blog" className="bg-orange-500 text-white hover:bg-orange-400 px-4 py-3 rounded-xl font-semibold">Add Blog</Link>
+            </div>
             <div className="flex justify-center gap-4 lg:gap-8 flex-wrap items-center">
                 <BlogCard
                     image="/static/mission.png"
