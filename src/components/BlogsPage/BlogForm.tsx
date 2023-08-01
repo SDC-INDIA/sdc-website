@@ -1,3 +1,4 @@
+import { addBlog } from "@/src/firebase/Firestore/blogsFirestore";
 import { useState } from "react"
 
 
@@ -8,8 +9,15 @@ const BlogForm = () => {
     const [ tag, setTag ] = useState('');
     const [ description, setDescription ] = useState('');
 
-    const handleSubmit = () => {
+    const handleImage = (e: any) => {
+        if(e.target.files){
+            setImage(e.target.files[0])
+        }
+    }
 
+    const handleSubmit = () => {
+        addBlog(title, description, "0123465", image, tag);
+        alert("Blog submitted")
     }
 
     return (
@@ -19,7 +27,7 @@ const BlogForm = () => {
                 <p className="text-[1.2rem] font-semibold">Title:</p>
                 <input onChange={(e) => setTitle(e.target.value)} type="text" name="title" id="" />
                 <p className="mt-4 text-[1.2rem] font-semibold">Image:</p>
-                <input onChange={(e)=>setImage(e.target.value)} type="file" name="image" id="image" accept="image/x-png,image/gif,image/jpeg" />
+                <input onChange={(e)=>handleImage(e)} type="file" name="image" id="image" accept="image/x-png,image/gif,image/jpeg" />
                 <p className="mt-4 text-[1.2rem] font-semibold">Tag:</p>
                 <input onChange={(e) => setTag(e.target.value)} type="text" name="tag" id="" maxLength={40} />
                 <p className="mt-4 text-[1.2rem] font-semibold">Description:</p>
