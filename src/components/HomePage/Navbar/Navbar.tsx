@@ -16,7 +16,7 @@ const Navbar = () => {
         console.log("user", user);
         
     }
-    if(loading) console.log("loading");
+    // if(loading) console.log("loading");
     
     
 
