@@ -1,7 +1,9 @@
-import Blogs from "../../components/BlogsPage/Blogs"
+import { getBlogs } from "@/src/firebase/Firestore/blogsFirestore";
+import Blogs from "../../components/BlogsPage/Blogs";
 
 
 const blog = () => {
+
   return (
     <div className="">
       <Blogs />
