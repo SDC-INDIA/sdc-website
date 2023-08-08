@@ -3,7 +3,8 @@ import BlogCard from "./BlogCard"
 import Link from "next/link"
 
 
-const Blogs = () => {
+const Blogs = (props: any) => {
+    const {blogs} = props;
     return (
         <div>
             <h1 className="custom-color-text get-center my-4 text-[3rem] font-semibold">Blogs from us!</h1>
@@ -18,7 +19,7 @@ const Blogs = () => {
                     date='Nov 8, 2022'
                     duration='5 min read'
                 />
-                {
+                {/* {
                     blogData.map((data, index) => {
                         return <BlogCard
                             key={index}
@@ -27,6 +28,19 @@ const Blogs = () => {
                             topic={data.topic}
                             date={data.date}
                             duration={data.duration}
+                        />
+                    })
+                } */}
+                {
+                    blogs.docs && blogs.docs.map((data: any, index: any)=>{
+                        const blog = data.data();
+                        return <BlogCard
+                            key={index}
+                            image={blog.image}
+                            title={blog.title}
+                            topic={blog.description}
+                            date={blog.date}
+                            duration={blog.tag}
                         />
                     })
                 }

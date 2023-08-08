@@ -1,7 +1,7 @@
 import BlogForm from "@/src/components/BlogsPage/BlogForm"
 
 
-const add_blog = () => {
+const AddBlog = () => {
   return (
     <div>
       <BlogForm />
@@ -9,4 +9,4 @@ const add_blog = () => {
   )
 }
 
-export default add_blog
+export default AddBlog
