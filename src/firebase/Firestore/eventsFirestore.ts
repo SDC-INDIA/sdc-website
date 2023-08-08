@@ -3,7 +3,7 @@ import { collection,  addDoc, getDocs } from "firebase/firestore";
 
 const collectionRef = collection(database, "Events");
 
-export const addEvent = (title: string, description: string, date: string, image: string) => {
+export const addEvent = (title: string, description: string, date: string, image: any) => {
     addDoc(collectionRef, {
         title,
         description,
@@ -18,14 +18,17 @@ export const addEvent = (title: string, description: string, date: string, image
         });
 }
 
-export const getEvents = async (setEvents: Function) => {
-    const docs = await getDocs(collectionRef);
-    const events = docs.forEach((doc)=>{
-        console.log(doc.data());
-        setEvents((prev: Array<Object>)=>{
-            [ ...prev, { id: doc.id, ...doc.data() } ]
-        });
-    })
-    return events;
+export const getEvents = async () => {
+    const response = await getDocs(collectionRef);
+    return response;
+    // console.log("response", response.docs[0].data());
+    
+    // getDocs(collectionRef)
+    // .then((response) => {
+    //     // response.docs.map((item)=>{
+    //     //     console.log(item.data());
+    //     // })
+    //     return response;
+    // })
 }
 

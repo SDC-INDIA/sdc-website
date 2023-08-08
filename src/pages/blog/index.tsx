@@ -1,6 +1,6 @@
 import { getBlogs } from "@/src/firebase/Firestore/blogsFirestore";
 import Blogs from "../../components/BlogsPage/Blogs";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 
 const Blog = () => {

@@ -35,7 +35,7 @@ const Navbar = () => {
                     <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
                         <li className="text-xl font-semibold"><Link className="hover:text-gray-500" href="/chapters">Our chapters</Link></li>
                         <li className="text-xl font-semibold"><Link className="hover:text-gray-500" href="/blog">Blog</Link></li>
-                        <li className="text-xl font-semibold"><Link className="hover:text-gray-500" href="">Events</Link></li>
+                        <li className="text-xl font-semibold"><Link className="hover:text-gray-500" href="/events">Events</Link></li>
                         <li className="text-xl font-semibold"><Link className="hover:text-gray-500" href="">Store</Link></li>
                     </ul>
                 </div>
@@ -57,7 +57,7 @@ const Navbar = () => {
                             <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
                                 <li className="font-semibold text-white"><Link className="hover:text-gray-500" href="/chapters">Our chapters</Link></li>
                                 <li className="font-semibold text-white"><Link className="hover:text-gray-500" href="/blog">Blog</Link></li>
-                                <li className="font-semibold text-white"><Link className="hover:text-gray-500" href="">Events</Link></li>
+                                <li className="font-semibold text-white"><Link className="hover:text-gray-500" href="/events">Events</Link></li>
                                 <li className="font-semibold text-white"><Link className="hover:text-gray-500" href="">Store</Link></li>
                             </ul>
                         </div>

@@ -32,8 +32,8 @@ const Blogs = (props: any) => {
                     })
                 } */}
                 {
-                    blogs.docs && blogs.docs.map((data: any, index: any)=>{
-                        const blog = data.data();
+                    blogs.docs && blogs.docs.map((item: any, index: any)=>{
+                        const blog = item.data();
                         return <BlogCard
                             key={index}
                             image={blog.image}
