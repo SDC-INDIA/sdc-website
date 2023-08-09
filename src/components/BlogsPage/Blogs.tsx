@@ -1,16 +1,21 @@
-import blogData from "@/src/constants/Blogs"
 import BlogCard from "./BlogCard"
 import Link from "next/link"
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth } from "@/src/firebase/Auth/auth";
 
 
 const Blogs = (props: any) => {
-    const {blogs} = props;
+    const { blogs } = props;
+    const [user, loading] = useAuthState(auth);
     return (
         <div>
             <h1 className="custom-color-text get-center my-4 text-[3rem] font-semibold">Blogs from us!</h1>
-            <div className="flex justify-center">
-                <Link href="/blog/add_blog" className="bg-orange-500 text-white hover:bg-orange-400 px-4 py-3 rounded-xl font-semibold">Add Blog</Link>
-            </div>
+            {
+                user &&
+                <div className="flex justify-center">
+                    <Link href="/blog/add_blog" className="bg-orange-500 text-white hover:bg-orange-400 px-4 py-3 rounded-xl font-semibold">Add Blog</Link>
+                </div>
+            }
             <div className="flex justify-center gap-4 lg:gap-8 flex-wrap items-center">
                 <BlogCard
                     image="/static/mission.png"
@@ -18,29 +23,20 @@ const Blogs = (props: any) => {
                     topic='Web Development'
                     date='Nov 8, 2022'
                     duration='5 min read'
+                    user={user}
                 />
-                {/* {
-                    blogData.map((data, index) => {
-                        return <BlogCard
-                            key={index}
-                            image={data.image}
-                            title={data.title}
-                            topic={data.topic}
-                            date={data.date}
-                            duration={data.duration}
-                        />
-                    })
-                } */}
                 {
-                    blogs.docs && blogs.docs.map((item: any, index: any)=>{
+                    blogs.docs && blogs.docs.map((item: any, index: any) => {
                         const blog = item.data();
                         return <BlogCard
                             key={index}
+                            id={item.id}
                             image={blog.image}
                             title={blog.title}
                             topic={blog.description}
                             date={blog.date}
                             duration={blog.tag}
+                            user={user}
                         />
                     })
                 }

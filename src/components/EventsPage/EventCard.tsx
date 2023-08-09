@@ -1,19 +1,29 @@
+import { deleteEvent } from "@/src/firebase/Firestore/eventsFirestore";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Tilt from 'react-parallax-tilt';
+// import Link from "next/link";
+
 
 
 const EventCard = (props: any) => {
-    const { image, title, description, date } = props;
+    const { image, title, description, date, user, id } = props;
+
     return (
-        <Tilt>
-            <motion.div className="rounded-2xl shadow-2xl bg-slate-300 w-[300px] py-6 px-8 mt-6 cursor-pointer" whileHover={{ scale: 1.1 }}>
-                <Image src={image} height={200} width={300} alt="" />
-                <h1 className="text-[1.1rem] font-bold">{title}</h1>
-                <p className="my-4 border-white uppercase bg-red-200 text-red-700 text-[0.8rem] w-fit p-2 font-semibold">{description}</p>
-                <p>{date}</p>
-            </motion.div>
-        </Tilt>
+        <motion.div className="my-6 flex lg:w-[80%] w-[90%] mx-auto flex-wrap shadow-xl p-6 rounded-lg bg-slate-200" whileHover={{ scale: 1.05 }}>
+            <div className="relative md:w-[500px] md:h-[300px] w-[300px] h-[200px] mx-auto">
+                <Image src={image} fill alt="" className="object-cover rounded-lg shadow-md" />
+            </div>
+            <div className="flex justify-center md:w-[40%] w-fit mx-auto">
+                <div className="flex flex-col justify-center my-8 text-center" >
+                    <h1 className="text-[1.5rem] custom-color-text font-bold">{title}</h1>
+                    <p className="text-[1.2rem] text-black">{description}</p>
+                    <p className="text-[1rem] text-black">{date}</p>
+                    {
+                        user && <button onClick={()=>deleteEvent(id)} className="my-4 bg-orange-500 hover:bg-orange-400 rounded py-2 px-4 w-fit text-white mx-auto">Delete</button>
+                    }
+                </div>
+            </div>
+        </motion.div>
     )
 }
 

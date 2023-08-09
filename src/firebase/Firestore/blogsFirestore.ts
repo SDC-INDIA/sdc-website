@@ -1,5 +1,5 @@
 import { database } from "../Firebase";
-import { collection,  addDoc, getDocs } from "firebase/firestore";
+import { collection,  addDoc, getDocs, deleteDoc, doc } from "firebase/firestore";
 
 const FOLDER = "Blogs";
 const collectionRef = collection(database, FOLDER);
@@ -32,4 +32,9 @@ export const getBlogs = async () => {
     //     // })
     //     return response;
     // })
+}
+
+export const deleteBlog = async (id: string) => {
+    await deleteDoc(doc(database, FOLDER, id));
+    console.log("Blog deleted");
 }

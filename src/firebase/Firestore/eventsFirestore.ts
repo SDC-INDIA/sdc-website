@@ -1,5 +1,5 @@
 import { database } from "../Firebase";
-import { collection,  addDoc, getDocs } from "firebase/firestore";
+import { collection,  addDoc, getDocs, deleteDoc, doc } from "firebase/firestore";
 
 const collectionRef = collection(database, "Events");
 
@@ -32,3 +32,7 @@ export const getEvents = async () => {
     // })
 }
 
+export const deleteEvent= async (id: string) => {
+    await deleteDoc(doc(database, "Events", id));
+    console.log("Event deleted");
+}
