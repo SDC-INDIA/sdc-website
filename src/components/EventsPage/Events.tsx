@@ -3,6 +3,7 @@ import React from 'react'
 import EventCard from './EventCard'
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "@/src/firebase/Auth/auth";
+import { motion } from 'framer-motion';
 
 
 const Events = (props: any) => {
@@ -10,13 +11,20 @@ const Events = (props: any) => {
     const [user, loading] = useAuthState(auth);
     return (
         <div className=''>
-            <h1 className="custom-color-text get-center text-[3.2rem] my-4 font-semibold">Our Events</h1>
-            {
-                user &&
-                <div className="flex justify-center">
-                    <Link href="/events/add_event" className="bg-orange-500 text-white hover:bg-orange-400 px-4 py-3 rounded-xl font-semibold">Add Event</Link>
-                </div>
-            }
+            <motion.div
+                transition={{ duration: 0.7 }}
+                initial={{ opacity: 0, y: "-100%" }}
+                whileInView={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: "100%" }}
+            >
+                <h1 className="custom-color-text get-center text-[3.2rem] my-4 font-semibold">Our Events</h1>
+                {
+                    user &&
+                    <div className="flex justify-center">
+                        <Link href="/events/add_event" className="bg-orange-500 text-white hover:bg-orange-400 px-4 py-3 rounded-xl font-semibold">Add Event</Link>
+                    </div>
+                }
+            </motion.div>
             {/* <div className="flex justify-center gap-4 lg:gap-8 flex-wrap items-center"> */}
             <div className="">
                 <EventCard

@@ -14,6 +14,7 @@ export const addBlog = (title: string, description: string, date: string, image:
     })
         .then(() => {
             alert("Data added");
+            window.location.href = "/blog"
         })
         .catch((err) => {
             alert(err);
@@ -36,5 +37,5 @@ export const getBlogs = async () => {
 
 export const deleteBlog = async (id: string) => {
     await deleteDoc(doc(database, FOLDER, id));
-    console.log("Blog deleted");
+    // console.log("Blog deleted");
 }

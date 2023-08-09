@@ -9,7 +9,13 @@ const BlogCard = (props: any) => {
 
     return (
         <Tilt>
-            <motion.div className="rounded-2xl shadow-2xl bg-slate-300 w-[300px] min-h-[500px] py-6 px-8 mt-6 cursor-pointer" whileHover={{ scale: 1.1 }}>
+            <motion.div
+                className="rounded-2xl shadow-2xl bg-slate-300 w-[300px] min-h-[500px] py-6 px-8 mt-6 cursor-pointer" whileHover={{ scale: 1.1 }}
+                transition={{ duration: 0.7 }}
+                initial={{ opacity: 0, x: "-20%" }}
+                whileInView={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: "20%" }}
+            >
                 <div className="relative w-[250px] h-[200px]">
                     <Image src={image} fill alt="" className="rounded-xl shadow-md object-center object-cover" />
                 </div>

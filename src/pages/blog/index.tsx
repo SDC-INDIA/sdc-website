@@ -10,7 +10,7 @@ const Blog = () => {
   data.then((response)=>{
     // console.log("data", response);
     setBlogData(response);
-    console.log("data", blogData);
+    // console.log("data", blogData);
   })
   // console.log("Data", data.then(response=>response));
   

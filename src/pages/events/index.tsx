@@ -8,7 +8,7 @@ const EventsPage = () => {
   let response = getEvents();
   response.then((res)=>{
     setData(res);
-    console.log("data", data);
+    // console.log("data", data);
     
   })
   return (

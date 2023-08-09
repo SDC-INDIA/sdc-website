@@ -12,6 +12,7 @@ export const addEvent = (title: string, description: string, date: string, image
     })
         .then(() => {
             alert("Data added");
+            window.location.href = "/events"
         })
         .catch((err) => {
             alert(err);
@@ -34,5 +35,5 @@ export const getEvents = async () => {
 
 export const deleteEvent= async (id: string) => {
     await deleteDoc(doc(database, "Events", id));
-    console.log("Event deleted");
+    // console.log("Event deleted");
 }

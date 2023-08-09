@@ -9,19 +9,19 @@ import HandshakeIcon from '@mui/icons-material/Handshake';
 
 const heroData = [
     {
-        href: "#about",
+        href: "/chapters",
         Icon: CardMembershipIcon,
         color: "orange",
         text: "Our chapters"
     },
     {
-        href: "#about",
+        href: "/blog",
         Icon: AutoStoriesIcon,
         color: "indigo",
         text: "Blog",
     },
     {
-        href: "#about",
+        href: "/events",
         Icon: CalendarMonthIcon,
         color: "cyan",
         text: "Events"
@@ -33,10 +33,10 @@ const heroData = [
         text: "Store"
     },
     {
-        href: "#about",
+        href: "/login",
         Icon: HandshakeIcon,
         color: "red",
-        text: "Careers"
+        text: "Log In"
     },
     {
         href: "#about",
