@@ -12,7 +12,7 @@ const LoginCard = () => {
 
     return (
         <div className="lg:w-[80%] w-[90%] mx-auto my-8">
-            <div className="rounded-2xl shadow-2xl bg-gradient-to-br from-slate-300 via-slate-400 to-slate-500 p-8 w-[400px] h-[370px] mx-auto flex flex-col justify-between">
+            <div className="rounded-2xl shadow-2xl bg-gradient-to-br from-slate-300 via-slate-400 to-slate-500 p-8 md:w-[400px] h-[370px] w-[340px] mx-auto flex flex-col justify-between">
                 <h1 className="text-[1.5rem] md:text-[2rem] w-fit mx-auto font-semibold ">Enter the details</h1>
                 <div className="">
                     <p className="text-[1.2rem] font-semibold">Email Address:</p>
