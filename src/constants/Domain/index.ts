@@ -12,16 +12,10 @@ const domainData = [
         id: "mobile",
     },
     {
-        title: "AI and ML",
+        title: "AIML and DS",
         content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, in doloremque, sit ratione inventore nisi maiores aut est consectetur enim accusantium voluptatem officiis non culpa facere, reprehenderit voluptas quo beatae!",
         image: "/static/mission.png",
         id: "aiml",
-    },
-    {
-        title: "Data Science",
-        content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, in doloremque, sit ratione inventore nisi maiores aut est consectetur enim accusantium voluptatem officiis non culpa facere, reprehenderit voluptas quo beatae!",
-        image: "/static/mission.png",
-        id: "ds",
     },
     {
         title: "Cyber Security",
@@ -36,7 +30,7 @@ const domainData = [
         id: "uiux",
     },
     {
-        title: "No Code Development",
+        title: "No Code Dev",
         content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, in doloremque, sit ratione inventore nisi maiores aut est consectetur enim accusantium voluptatem officiis non culpa facere, reprehenderit voluptas quo beatae!",
         image: "/static/mission.png",
         id: "no-code",
@@ -46,6 +40,13 @@ const domainData = [
         content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, in doloremque, sit ratione inventore nisi maiores aut est consectetur enim accusantium voluptatem officiis non culpa facere, reprehenderit voluptas quo beatae!",
         image: "/static/mission.png",
         id: "digi-marketing",
+    },
+    
+    {
+        title: "Open Source",
+        content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, in doloremque, sit ratione inventore nisi maiores aut est consectetur enim accusantium voluptatem officiis non culpa facere, reprehenderit voluptas quo beatae!",
+        image: "/static/mission.png",
+        id: "open-source",
     },
 ];
 

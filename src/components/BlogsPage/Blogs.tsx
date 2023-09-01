@@ -11,10 +11,10 @@ const Blogs = (props: any) => {
     return (
         <div>
             <motion.div
-                transition={{ duration: 0.7 }}
-                initial={{ opacity: 0, x: "20%" }}
-                whileInView={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: "-20%" }}
+                // transition={{ duration: 0.7 }}
+                // initial={{ opacity: 0, x: "20%" }}
+                // whileInView={{ opacity: 1, x: 0 }}
+                // exit={{ opacity: 0, x: "-20%" }}
             >
                 <h1 className="custom-color-text get-center my-4 text-[3rem] font-semibold">Blogs from us!</h1>
                 {

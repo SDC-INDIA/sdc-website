@@ -8,10 +8,10 @@ const About = () => {
         <div className="lg:flex lg:justify-center lg:wrap lg:gap-40 pt-16" id="about">
             <motion.div
                 className="lg:w-[100%] lg:mb-0 mb-8"
-                transition={{ duration: 1 }}
-                initial={{ opacity: 0, x: "100%" }}
-                whileInView={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: "-100%" }}
+                // transition={{ duration: 1 }}
+                // initial={{ opacity: 0, x: "100%" }}
+                // whileInView={{ opacity: 1, x: 0 }}
+                // exit={{ opacity: 0, x: "-100%" }}
             >
                 <h1 className="text-[3rem] custom-color-text font-extrabold mb-8">A brief about us</h1>
                 <p className="">
@@ -20,10 +20,10 @@ const About = () => {
             </motion.div>
             <motion.div
                 className=""
-                transition={{ duration: 1 }}
-                initial={{ opacity: 0, x: "-100%" }}
-                whileInView={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: "100%" }}
+                // transition={{ duration: 1 }}
+                // initial={{ opacity: 0, x: "-100%" }}
+                // whileInView={{ opacity: 1, x: 0 }}
+                // exit={{ opacity: 0, x: "100%" }}
             >
                 {
                     about.map((content, index) => {

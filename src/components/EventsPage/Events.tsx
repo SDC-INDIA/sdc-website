@@ -12,10 +12,10 @@ const Events = (props: any) => {
     return (
         <div className=''>
             <motion.div
-                transition={{ duration: 0.7 }}
-                initial={{ opacity: 0, y: "-100%" }}
-                whileInView={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: "100%" }}
+                // transition={{ duration: 0.7 }}
+                // initial={{ opacity: 0, y: "-100%" }}
+                // whileInView={{ opacity: 1, y: 0 }}
+                // exit={{ opacity: 0, y: "100%" }}
             >
                 <h1 className="custom-color-text get-center text-[3.2rem] my-4 font-semibold">Our Events</h1>
                 {
