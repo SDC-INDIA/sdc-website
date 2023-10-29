@@ -5,7 +5,7 @@ import JoinChapter from "./JoinChapter"
 const ChaptersComp = () => {
     return (
         <div className="lg:w-[80%] w-[90%] mx-auto">
-            <h1 className="custom-color-text get-center my-4 text-[3rem] font-semibold">More About SDC</h1>
+            <h1 className="custom-color-text get-center my-4 text-[2.5rem] font-semibold">Our Chapters</h1>
             <ChapterContent 
                 image='/static/charminar.png'
                 imagePosition='left'

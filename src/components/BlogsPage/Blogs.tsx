@@ -16,7 +16,8 @@ const Blogs = (props: any) => {
                 // whileInView={{ opacity: 1, x: 0 }}
                 // exit={{ opacity: 0, x: "-20%" }}
             >
-                <h1 className="custom-color-text get-center my-4 text-[3rem] font-semibold">Blogs from us!</h1>
+                <h1 className="custom-color-text get-center my-4 text-[3rem] font-semibold">Coming Soon...</h1>
+
                 {
                     user &&
                     <div className="flex justify-center">
