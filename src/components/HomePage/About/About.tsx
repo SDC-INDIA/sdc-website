@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
     return (
-        <div className="lg:flex lg:justify-around lg:wrap pt-16" id="about">
+        <div className="lg:flex lg:justify-around lg:wrap lg:pt-16 pt-8" id="about">
             <motion.div
                 className="lg:w-[100%] lg:mb-0 mb-8"
                 // transition={{ duration: 1 }}
