@@ -14,7 +14,7 @@ const About = () => {
                 // exit={{ opacity: 0, x: "-100%" }}
             >
                 <h1 className="text-[3rem] custom-color-text font-extrabold mb-4">About us</h1>
-                <p className="text-[1.2rem] text-justify">
+                <p className="md:text-[0.9rem] lg:text-[1.2rem] text-justify">
                 Student Developer Community is the nucleus of tech enthusiasts across India, igniting innovation and learning throughout the nation. <br></br>As a united force of tech enthusiasts, we ignite innovation and learning across the nation. <br></br><br></br>Our mission transcends boundaries, connecting students from every corner of India with immersive experiences. From hands-on technical workshops encompassing software development, data science, and AI, to electrifying hackathons that challenge and inspire. At SDC India, the possibilities are boundless. Together, let's code the future, create connections, and revolutionize technology. Welcome to the heartbeat of India's tech innovation.
                 </p>
             </motion.div>
