@@ -30,7 +30,7 @@ const Domain = () => {
                             const currentStyle = isDisplay(index) ? styles.active : styles.normal;
                             const hiddenStyle = data.id === 'hidden' ? 'max-md:hidden' : '';
                             return (
-                                <Link key={index} href={`#${data.id}`} onClick={() => setDisplay(index)} className={cls(currentStyle, hiddenStyle, "text-center text-[1rem] p-4 rounded-lg font-semibold bg-orange-100")}>
+                                <Link key={index} href={`#${data.id}`} onClick={() => setDisplay(index)} className={cls(currentStyle, hiddenStyle, "text-center text-[1rem] max-md:text-[0.8rem] p-4 rounded-lg font-semibold bg-orange-100")}>
                                     {data.title}
                                 </Link>
                             )
