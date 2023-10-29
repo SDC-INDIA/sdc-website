@@ -16,7 +16,7 @@ const Hero = () => {
           // exit={{ opacity: 0, x: "100%" }}
         >
           <h1 className="text-[40px] lg:text-[50px] font-bold custom-color-text">Welcome to Student Developers Community!</h1>
-          <h2 className="text-xl font-semibold text-left custom-color-text">Come fall in the loop of tech</h2>
+          <h2 className="text-xl font-semibold text-left custom-color-text">Fall in the loop of tech</h2>
         </motion.div>
 
         <motion.div

@@ -22,8 +22,9 @@ const Domain = () => {
                 // whileInView={{ opacity: 1, y: 0 }}
                 // exit={{ opacity: 0, y: "-100%" }}
             >
-                <h1 className="text-[2.5rem] font-bold w-fit mx-auto custom-color-text">Domains Supported by us!</h1>
-                <div className="mx-auto w-fit my-12 flex justify-between lg:gap-4 gap-1 flex-wrap">
+                <h1 className="text-[2.5rem] font-bold w-fit mx-auto custom-color-text mb-4">Our Domains</h1>
+                {/* <div className="mx-auto w-fit my-12 flex justify-between lg:gap-4 gap-1 flex-wrap"> */}
+                <div className="text-center grid grid-cols-5 gap-8">
                     {
                         domainData.map((data, index) => {
                             const currentStyle = isDisplay(index) ? styles.active : styles.normal;
