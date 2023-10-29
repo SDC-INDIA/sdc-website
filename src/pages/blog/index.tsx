@@ -1,6 +1,7 @@
 import { getBlogs } from "@/src/firebase/Firestore/blogsFirestore";
 import Blogs from "../../components/BlogsPage/Blogs";
 import { useState } from "react";
+import Head from "next/head";
 
 
 const Blog = () => {
@@ -32,6 +33,9 @@ const Blog = () => {
   // }, [])
   return (
     <div className="">
+        <Head>
+          <title>Blogs</title>
+        </Head>
       <Blogs blogs={blogData} />
     </div>
   )
