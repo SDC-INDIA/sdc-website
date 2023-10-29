@@ -27,12 +27,12 @@ const Events = (props: any) => {
             </motion.div>
             {/* <div className="flex justify-center gap-4 lg:gap-8 flex-wrap items-center"> */}
             <div className="">
-                <EventCard
+                {/* <EventCard
                     image="https://images.pexels.com/photos/17021500/pexels-photo-17021500/free-photo-of-cat-looking-up.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
                     title='Web Development'
                     description='Mastering JavaScript in 30 Days: A Comprehensive Guide for Success'
                     date='Nov 8, 2022'
-                />
+                /> */}
                 {
                     events.docs && events.docs.map((item: any, index: any) => {
                         const event = item.data();
