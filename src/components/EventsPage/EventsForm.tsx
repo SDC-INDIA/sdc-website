@@ -47,7 +47,7 @@ const EventsForm = () => {
                     <p className="mt-4 text-[1.2rem] font-semibold">Image:</p>
                     <input onChange={(e) => handleImage(e)} type="file" name="image" id="image" accept="image/x-png,image/gif,image/jpeg" required />
                     <p className="mt-4 text-[1.2rem] font-semibold">Description:</p>
-                    <textarea onChange={(e) => setDescription(e.target.value)} name="description" id="" maxLength={40} required />
+                    <textarea onChange={(e) => setDescription(e.target.value)} name="description" id="" maxLength={500} required />
                     <br />
                     <input className="cursor-pointer bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 hover:bg-gradient-to-l px-4 py-2 mt-3 rounded-xl text-white text-[1.2rem] font-semibold w-fit" type="submit" value="Submit" />
                 </form>
