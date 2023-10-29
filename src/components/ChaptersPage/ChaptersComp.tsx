@@ -7,16 +7,16 @@ const ChaptersComp = () => {
         <div className="lg:w-[80%] w-[90%] mx-auto">
             <h1 className="custom-color-text get-center my-4 text-[3rem] font-semibold">More About SDC</h1>
             <ChapterContent 
-                image='/static/hero_image.png'
+                image='/static/charminar.png'
                 imagePosition='left'
-                title='SDC Hyderabad'
-                content='Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum alias totam suscipit enim eligendi. Dolorem ad itaque accusantium, totam tempore iusto vero soluta excepturi enim voluptates officiis assumenda? Nesciunt, eum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum alias totam suscipit enim eligendi. Dolorem ad itaque accusantium, totam tempore iusto vero soluta excepturi enim voluptates officiis assumenda? Nesciunt, eum?'
+                title='SDC HYDERABAD CHAPTER'
+                content='The SDC Hyderabad Chapter is the central hub for overseeing all college chapters and organizing tech events in the Hyderabad region. With a dedicated team of 12+ board members comprising both students and tech professionals, we work tirelessly to cultivate a thriving tech community that greatly benefits students.'
             />
             <ChapterContent 
-                image='/static/hero_image.png'
+                image='/static/snist.jpg'
                 imagePosition='right'
-                title='SDC SNIST'
-                content='Welcome to the dynamic realm of SDC-SNIST, the epicenter of innovation at Sreenidhi Institute of Science and Technology. As the pioneer chapter of SDC across India, we unite tech enthusiasts, foster expertise in domains like web and app development, UI/UX, AI, and more. Engage in exhilarating hackathons, workshops, mentorship programs, and industry talks. Join us in sculpting the future of technology, where collaboration and creativity thrive. Ignite your potential with SDC-SNIST!'
+                title='SDC SNIST CHAPTER'
+                content='The SDC Chapter at Sreenidhi Institute of Science and Technology inaugurated on 5th may 2023 and the chapter is a shining example of our commitment to fostering a thriving tech community within educational institutions. With over 15 dedicated board members, our chapter is recognized as one of the most active and influential chapters in the college, known for its exceptional work in spreading knowledge about technology and educating students in this dynamic field.'
             />
             <JoinChapter />
         </div>
