@@ -57,7 +57,7 @@ const domainData = [
         title: "And More....",
         content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, in doloremque, sit ratione inventore nisi maiores aut est consectetur enim accusantium voluptatem officiis non culpa facere, reprehenderit voluptas quo beatae!",
         image: "/static/mission.png",
-        id: "digi-marketing",
+        id: "hidden",
     },
 ];
 

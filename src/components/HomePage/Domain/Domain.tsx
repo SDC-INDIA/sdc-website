@@ -17,18 +17,23 @@ const Domain = () => {
     return (
         <div className="mt-16 mb-12">
             <motion.div
-                // transition={{ duration: 1 }}
-                // initial={{ opacity: 0, y: "100%" }}
-                // whileInView={{ opacity: 1, y: 0 }}
-                // exit={{ opacity: 0, y: "-100%" }}
+            // transition={{ duration: 1 }}
+            // initial={{ opacity: 0, y: "100%" }}
+            // whileInView={{ opacity: 1, y: 0 }}
+            // exit={{ opacity: 0, y: "-100%" }}
             >
                 <h1 className="text-[2.5rem] font-bold w-fit mx-auto custom-color-text mb-4">Our Domains</h1>
                 {/* <div className="mx-auto w-fit my-12 flex justify-between lg:gap-4 gap-1 flex-wrap"> */}
-                <div className="text-center grid lg:grid-cols-5 grid-cols-3 gap-8">
+                <div className="grid lg:grid-cols-5 grid-cols-3 gap-8">
                     {
                         domainData.map((data, index) => {
                             const currentStyle = isDisplay(index) ? styles.active : styles.normal;
-                            return <Link key={index} href={`#${data.id}`} onClick={() => setDisplay(index)} className={cls(currentStyle, "text-[1rem] p-4 rounded-lg font-semibold bg-orange-100")}>{data.title}</Link>
+                            const hiddenStyle = data.id === 'hidden' ? 'max-md:hidden' : '';
+                            return (
+                                <Link key={index} href={`#${data.id}`} onClick={() => setDisplay(index)} className={cls(currentStyle, hiddenStyle, "text-center text-[1rem] p-4 rounded-lg font-semibold bg-orange-100")}>
+                                    {data.title}
+                                </Link>
+                            )
                         })
                     }
                 </div>
