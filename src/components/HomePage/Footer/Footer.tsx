@@ -11,7 +11,7 @@ const Footer = () => {
                 <div>
                     <Link href="/"><Image className='' src="/static/sdc-logo-black.png" height={400} width={400} alt="" /></Link>
                 </div>
-                <div className="flex justify-around gap-40 lg:gap-60">
+                <div className="flex justify-around gap-28 lg:gap-60">
                     <div className='flex flex-col gap-4 mt-4 justify-center'>
                         <Link href="#" className="custom-color-text text-[1.5rem] w-fit font-semibold">Home</Link>
                         <Link href="/events" className="custom-color-text text-[1.5rem] w-fit font-semibold">Events</Link>
